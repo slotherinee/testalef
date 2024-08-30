@@ -29,7 +29,7 @@ const updateChildrenData = () => {
       return;
     }
   }
-  store.children.value = localChildren.value;
+  store.children = localChildren.value;
   emit("updateChildrenData", localChildren.value);
 };
 </script>

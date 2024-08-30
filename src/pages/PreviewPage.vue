@@ -18,7 +18,7 @@ const { name, age, children } = storeToRefs(store);
       <div v-if="name">
         <div class="flex flex-col gap-y-5">
           <h3 class="font-medium text-base text-[#111]">Дети</h3>
-          <div v-if="children.length > 0">
+          <div class="flex flex-col gap-y-2" v-if="children.length > 0">
             <div
               v-for="child in children"
               :key="child.name"
